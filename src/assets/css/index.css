@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: segoe ui;
+}
+
+.container-fluid {
+    position: relative;
+    height: 647px;
+    overflow: hidden;
+}
+
+
+
+/* css for images */
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    width: 100%;
+    height: 100%;
+	
+	opacity: 0;
+	transition: 0.5s;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 4s;
+}
+
+/* css for content */
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+/* css for content__left */
+
+.content__left,
+.content__right {
+    padding: 0;
+}
+
+.content__left {
+    padding-left: 7%;
+    padding-top: 10%;
+}
+
+.content__left h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #650505;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    animation: fadeInRight 1s forwards;
+    animation-delay: 4.5s;
+}
+
+.content__left p {
+    font-size: 39px;
+    font-weight: 500;
+    padding-left: 10%;
+    padding-top: 5%;
+    color: #050545;
+
+    opacity: 0;
+    animation: fadeInBouce 1s forwards;
+    animation-delay: 5.2s;
+}
+
+.content__left h1:hover {
+	text-shadow: 10px 10px 50px gray;
+    color: brown;
+}
+
+.content__left p:hover {
+    color: blue;
+    text-shadow: 10px 10px 50px gray;
+}
+
+
+/* css for content__right */
+.content__right {
+	padding-left: 5%;
+
+}
+.content__right__contact {
+	color: white;
+
+	transition: 0.5s;
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+	animation-delay: 5s;
+}
+.content__right__contact .fa{
+	margin-right: 10px;
+	margin-left: 5px;
+	padding-top: 5%;
+}
+.email:hover, .phone:hover{
+	color: blue;
+}
+.content__right__btn {
+	padding-top: 10%;
+	padding-right: 10%;
+	text-align: right;
+}
+.btn-DangNhap, .btn-DangKy {
+	width: 200px;
+	height: 50px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 400;
+	transition: 0.5s;
+	
+}
+.content__right__DangNhap, .content__right__DangKy {
+	opacity: 0;
+	animation: fadeInRight 1s forwards;
+}
+.content__right__DangNhap {
+	animation-delay: 5.5s;
+}
+.content__right__DangKy {
+	animation-delay: 5.7s;
+}
+
+.btn-DangNhap:hover, .btn-DangKy:hover{
+	transform: scale(1.2);
+}
+
+/* css for bg-gradient */
+
+.bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    -webkit-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -moz-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -ms-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -o-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+
+	opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 4s;
+}
+
+.container-fluid:hover .bg-gradient {
+    -webkit-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -moz-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -ms-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    -o-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+    background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
+}
+
+
+/* css for course */
+.icon-courses{
+	position: absolute;
+	left: 0%;
+	bottom: 5%;
+	
+}
+.icon-courses__item {
+	width: 70px;
+	height: 70px;
+	padding:0 60px;
+
+	opacity: 0;
+	animation: fadeInUp 1s forwards;
+	
+}
+.icon-courses__item:nth-child(1){
+	animation-delay: 5s;
+}
+.icon-courses__item:nth-child(2){
+	animation-delay: 5.1s;
+}
+.icon-courses__item:nth-child(3){
+	animation-delay: 5.3s;
+}
+.icon-courses__item:nth-child(4){
+	animation-delay: 5.4s;
+}
+.icon-courses__item:nth-child(5){
+	animation-delay: 5.5s;
+}
+.icon-courses__item:nth-child(6){
+	animation-delay: 5.6s;
+}
+.icon-courses__item:nth-child(7){
+	animation-delay: 5.7s;
+}
+.icon-courses__item:nth-child(8){
+	animation-delay: 5.8s;
+}
+.icon-courses__item img {
+	width: 70px;
+	height: 100%;
+	transition: 0.5s;
+}
+.icon-courses__item:hover img {
+	transform: scale(1.5);
+}
+
+/* Css for preloading */
+.preloading {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 7;
+    animation: fadeOut 2s forwards;
+    animation-delay: 3s;
+}
+.preloading img {
+	width:30%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 7;
+}
+
+
+

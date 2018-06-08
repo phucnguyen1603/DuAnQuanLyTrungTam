@@ -3,41 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ - Quản Lý Trung Tâm</title>
-    <link rel="stylesheet"  href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"  href="../../assets/css/animation.css">
-    <link rel="stylesheet"  href="../../assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/animation.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
 </head>
 
 <body>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="container-fluid p-0">
+        <div class="preloading">
+            <img src="../../assets/images/img-trangchu/loading-walking.gif" alt="">
+        </div>
+         <img src="../../assets/images/img-trangchu/Development-Tools.jpg" alt="" class="bg-img w-100">
+        <div class="bg-gradient"></div>
+        <div class="row content">
+            <div class="col-lg-8 content__left">
+                <h1 class="content__left__ttl">CyberSoft</h1>
+                <p class="content__left__slogan">Trở Thành Chuyên Gia <span>"LẬP TRÌNH WEB"</span> từ con số 0</p>
+            </div>
+            <div class="col-lg-4 content__right">
+                <div class="content__right__contact">
+                    <span class="email"><i class="fa fa-envelope"></i>admin@cybersoft.edu.vn</span>
+                    <span class="phone"><i class="fa fa-phone"></i>012342342</span>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="content__right__btn">
+                    <div class="content__right__DangNhap">
+                        <button class="btn btn-success btn-DangNhap">Đăng Nhập</button>
+                    </div>
+                    <div  class="content__right__DangKy">
+                         <button class="btn btn-warning btn-DangKy">Đăng Ký</button>
+                    </div>
+                   
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            <div class="col-lg-12 icon-courses d-flex justify-content-center">
+                <div class="row">
+                    <div class=" icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/html5.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/css3.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/js.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/bootstrap.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/jquery.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/ajax.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/Angular.png" alt="">
+                    </div>
+                     <div class="icon-courses__item">
+                        <img src="../../assets/images/img-trangchu/icon courses/WordPress_blue_logo.svg.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="../../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <script type="text/javascript" src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../../../node_modules/popper.js/dist/popper.min.js"></script>
-    <script type="text/javascript" src="../../../node_modules/bootstrap//dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/bootstrap//dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Controlers/index.js"></script>
 </body>
 
