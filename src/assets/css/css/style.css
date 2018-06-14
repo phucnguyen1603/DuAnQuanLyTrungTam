@@ -76,7 +76,6 @@ Global Styles
   outline: none; }
 
 body {
-  background: #332424;
   font-family: "Poppins", sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -707,10 +706,15 @@ Table Cell
   vertical-align: middle; }
 
 .table td, .table th {
-  border-color: #f3f1f1; }
+  border-color: #f3f1f1;
+  width: 0px;
+  /* overflow:  hidden; */
+  }
 
 .table thead th, .table th {
-  font-weight: 500; }
+  font-weight: 500;
+  padding: 10px;
+  }
 
 .table-hover tbody tr:hover {
   background: #f2f4f8; }
@@ -1507,7 +1511,6 @@ Checkbox
       width: 16px; }
   .checkbox input[type="checkbox"] {
     cursor: pointer;
-    opacity: 0;
     z-index: 1;
     position: absolute;
     left: 0px;
@@ -1924,10 +1927,13 @@ File: scss
 
 .page-wrapper {
   background: #eef5f9;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  }
 
 .container-fluid {
-  padding: 0 30px 25px 30px; }
+  /* padding: 0 30px 25px 30px; */
+  margin-left: -20px;
+  }
 
 /*******************
  Topbar
@@ -1940,13 +1946,15 @@ File: scss
   .topbar .top-navbar {
     min-height: 70px;
     padding: 0px 15px 0 0;
-    background-color: #272121;
+    background-color: #3e3e07;
     }
     .topbar .top-navbar .dropdown-toggle::after {
       display: none; }
     .topbar .top-navbar .navbar-header {
       line-height: 65px;
-      text-align: center; }
+      text-align: center;
+      background: #3e3e07;
+      }
       .topbar .top-navbar .navbar-header .navbar-brand {
         margin-right: 0px;
         padding-bottom: 0px;
@@ -2061,10 +2069,11 @@ File: scss
 *******************/
 .page-titles {
   background: #ffffff;
-  margin: 0 -30px 30px;
+  margin: 0 -30px 10px;
   padding: 15px;
   -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+  }
   .page-titles h3 {
     margin-bottom: 0px;
     margin-top: 8px; }
@@ -2325,7 +2334,8 @@ ul#themecolors {
  page title
 *******************/
 .page-titles {
-  padding-bottom: 20px; }
+  /* padding-bottom: 20px; */
+  }
 
 /*******************
  Footer
@@ -5384,14 +5394,15 @@ Main sidebar
 ******************/
 .left-sidebar {
   position: absolute;
-  width: 240px;
+  width: 200px;
   height: 100%;
   top: 0px;
   z-index: 20;
   padding-top: 70px;
-  background: #fff;
+  background: #231919;
   -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08); }
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  }
 
 .fix-sidebar .left-sidebar {
   position: fixed; }
@@ -5491,9 +5502,10 @@ sidebar footer
   -webkit-transition: 0.2s ease-out;
   -o-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  width: 240px;
+  width: 200px;
   background: #fff;
-  border-top: 1px solid rgba(120, 130, 140, 0.13); }
+  border-top: 1px solid rgba(120, 130, 140, 0.13);
+  }
   .sidebar-footer a {
     padding: 15px;
     width: 33.333337%;
@@ -5514,7 +5526,8 @@ sidebar navigation
 
 .sidebar-nav {
   background: #fff;
-  padding: 15px; }
+  padding: 5px;
+  }
   .sidebar-nav ul {
     margin: 0px;
     padding: 0px; }
@@ -6600,10 +6613,11 @@ File: scss
  ============================================================== */
 @media (min-width: 768px) {
   .navbar-header {
-    width: 240px;
+    width: 200px;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    }
     .navbar-header .navbar-brand {
       padding-top: 0px; }
   .material-icon-list-demo .icons div {
@@ -7991,4 +8005,8 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
 
 .sidebar-nav {
   background-color: #231919!important;
+}
+
+#txtTuKhoa {
+  border-radius: 40px;
 }

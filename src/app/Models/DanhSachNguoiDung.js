@@ -27,14 +27,14 @@ function DanhSachNguoiDung()
         {
             var nguoiDung = this.DSND[i];
             var timKiemHoTen = nguoiDung.HoTen.toLowerCase().trim().search(tuKhoa); 
-            var timKiemMatKhau = nguoiDung.MatKhau.toLowerCase().trim().search(tuKhoa); 
-            // var timKiemEmail = nguoiDung.Email.toLowerCase().trim().search(tuKhoa); 
-            var timKiemTaiKhoan = nguoiDung.TaiKhoan.toLowerCase().trim().search(tuKhoa);
-            var timKiemSoDT = nguoiDung.SoDT.search(tuKhoa);
+            // var timKiemMatKhau = nguoiDung.MatKhau.toLowerCase().trim().search(tuKhoa); 
+            // // var timKiemEmail = nguoiDung.Email.toLowerCase().trim().search(tuKhoa); 
+            // var timKiemTaiKhoan = nguoiDung.TaiKhoan.toLowerCase().trim().search(tuKhoa);
+            // var timKiemSoDT = nguoiDung.SoDT.search(tuKhoa);
 
 
 
-            if(timKiemHoTen !== -1 || timKiemMatKhau !== -1 || timKiemTaiKhoan !== -1)
+            if(timKiemHoTen !== -1 )
             {
                 danhSachNguoiDungKQ.ThemNguoiDung(nguoiDung);
             }

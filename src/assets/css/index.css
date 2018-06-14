@@ -8,6 +8,7 @@
     position: relative;
     height: 647px;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 html,body {
@@ -191,7 +192,7 @@ html,body {
 
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.7s;
     -webkit-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
     -moz-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
     -ms-background-image: linear-gradient(0deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
@@ -728,10 +729,10 @@ iframe {
     color: #650505;
     letter-spacing: 20px;
     text-transform: uppercase;
-
     opacity: 0;
     animation: fadeInRight 1s forwards;
     animation-delay: 3.5s;
+    transition: 0.4s;
 }
 
 .content__left p {
@@ -740,10 +741,10 @@ iframe {
     padding-left: 10%;
     padding-top: 5%;
     color: #050545;
-
     opacity: 0;
     animation: fadeInBouce 1s forwards;
     animation-delay: 4.2s;
+    transition: 0.3s;
 }
 
 .content__left h1:hover {

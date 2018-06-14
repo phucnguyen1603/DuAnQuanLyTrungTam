@@ -13,7 +13,6 @@
     <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap Core CSS -->
-
     <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../../../assets/css/css/style.css" rel="stylesheet">
@@ -105,18 +104,17 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li> <a class="waves-effect waves-dark" href="admin.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                        <li> <a class="waves-effect waves-dark" href="admin.html" aria-expanded="false"><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Profile</span></a>
+                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><span class="hide-menu">Thông Tin Tài Khoản</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="member-table.html" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Table Member</span></a>
+                        <li> <a class="waves-effect waves-dark" href="member-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Người Dùng</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="course-table.html" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Table Course</span></a>
+                        <li> <a class="waves-effect waves-dark" href="course-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Khóa Học</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="courses-card.html" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Card Course</span></a>
+                        <li> <a class="waves-effect waves-dark" href="courses-card.html" aria-expanded="false"><span class="hide-menu">Card Course</span></a>
                         </li>
                     </ul>
-                   
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -125,7 +123,7 @@
             <div class="sidebar-footer">
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="fa fa-envelope-o"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="fa fa-power-off"></i></a> 
+                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="fa fa-power-off"></i></a>
             </div>
             <!-- End Bottom points-->
         </aside>
@@ -145,11 +143,18 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Table</h3>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Table</li>
-                        </ol>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Danh Sách Khóa Học</h3>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <button class="btn btn-success p-3 my-2 font-weight-bold btn-ThemNguoiDung">Thêm Khóa Học</button>
+                    </div>
+                    <div class="col-md-5 text-right my-3">
+                        <form class="input-group">
+                            <input type="text" name="search" id="txtTuKhoa" class="text-right form-control" placeholder="Nhập Tên Tìm Kiếm">
+                            <div class="input-group-append">
+                                <i class="fa fa-search form-control border-0"></i>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -158,66 +163,8 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row">
-                    <!-- column -->
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title">Basic Table</h4>
-                                <h6 class="card-subtitle">Add class <code>.table</code></h6>
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Deshmukh</td>
-                                                <td>Prohaska</td>
-                                                <td>@Genelia</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Deshmukh</td>
-                                                <td>Gaylord</td>
-                                                <td>@Ritesh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Sanghani</td>
-                                                <td>Gusikowski</td>
-                                                <td>@Govinda</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Roshan</td>
-                                                <td>Rogahn</td>
-                                                <td>@Hritik</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Joshi</td>
-                                                <td>Hickle</td>
-                                                <td>@Maruti</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Nigam</td>
-                                                <td>Eichmann</td>
-                                                <td>@Sonu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Danh Sach Khóa Học -->
+                <div class="row" id="DanhSachKhoaHoc">
                 </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
@@ -230,7 +177,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                © 2017 Material Pro Admin by wrappixel.com
+                © 2018 CyberSoft.edu.vn
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

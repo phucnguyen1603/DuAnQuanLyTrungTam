@@ -27,8 +27,8 @@ function NguoiDungService() {
 			data: jsonNguoiDung,
 		})
 	}
-	this.XoaNguoiDung = function(id) {
-		var urlAPI = `http://sv.myclass.vn/api/QuanLyTrungTam/XoaNguoiDung/${id}`;
+	this.XoaNguoiDung = function(taiKhoan) {
+		var urlAPI = `http://sv.myclass.vn/api/QuanLyTrungTam/XoaNguoiDung/${taiKhoan}`;
 		return $.ajax({
 			url: urlAPI,
 			type: 'DELETE',
@@ -36,6 +36,14 @@ function NguoiDungService() {
 	}
 	this.DangNhap = function(taiKhoan,matKhau) {
 		var urlAPI =`http://sv.myclass.vn/api/QuanLyTrungTam/DangNhap?taikhoan=${taiKhoan}&matkhau=${matKhau}`;
+		return $.ajax({
+			url: urlAPI,
+			type: 'GET',
+			dataType: 'json',
+		})
+	}
+	this.LayThongTinKhoaHoc = function(taiKhoan) {
+		var urlAPI = `http://sv.myclass.vn/api/QuanLyTrungTam/LayThongtinKhoaHoc?taikhoan=${taiKhoan}`;
 		return $.ajax({
 			url: urlAPI,
 			type: 'GET',
