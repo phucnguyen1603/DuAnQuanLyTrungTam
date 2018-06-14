@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-    var danhSachNguoiDung = new DanhSachNguoiDung();
-    var nguoiDungService = new NguoiDungService();
-
-    var khoaHocService = new KhoaHocService();
-
-
     //gọi ra hàm LoadDanhSachNguoiDung
     LoadDanhSachNguoiDung();
 
@@ -23,31 +17,6 @@ $(document).ready(function() {
                 console.log(err);
             })
     }
-
-    //Hàm Tạo Bảng Danh sách người dùng
-    // function BangDanhSachNguoiDung(DSND) {
-    //     var noiDung = "";
-    //     for (var i = 0; i < DSND.length; i++) {
-    //         var nguoiDung = DSND[i];
-    //         noiDung += `
-    //             <tr class="trNguoiDung">
-    //                 <td class="TaiKhoan">${nguoiDung.TaiKhoan}</td>
-    //                 <td class="MatKhau">${nguoiDung.MatKhau}</td>
-    //                 <td class="HoTen">${nguoiDung.HoTen}</td>
-    //                 <td class="Email">${nguoiDung.Email}</td>
-    //                 <td class="SoDT">${nguoiDung.SoDT}</td>
-    //                 <td class="TenLoaiNguoiDung">${nguoiDung.TenLoaiNguoiDung}</td>
-    //                 <td>
-    //                     <button class="btn btn-primary btnSua" data-TaiKhoan = "${nguoiDung.TaiKhoan}">Chỉnh Sửa</button>
-    //                     <button class="btn btn-danger btnXoa" data-TaiKhoan = "${nguoiDung.TaiKhoan}">Xóa</button>
-    //                     <button class="btn btn-warning btnGhiDanh" data-TaiKhoan = "${nguoiDung.TaiKhoan}">Ghi Danh</button>
-    //                 </td>
-    //             </tr>
-    //         `
-    //     }
-    //     $('#tblNguoiDung').html(noiDung);
-    // }
-
     //Hàm tạo card danh sách người dùng
     function CardNguoiDung(DSND) {
         var noidung = "";
@@ -57,46 +26,46 @@ $(document).ready(function() {
                 if (nguoiDung.HoTen !== "null" && nguoiDung.TaiKhoan !== "null" && nguoiDung.Email !== "null" && nguoiDung.SoDT !== "null" && nguoiDung.MatKhau !== "null" && !isNaN(nguoiDung.SoDT) && nguoiDung.TenLoaiNguoiDung !== "null") {
                     noidung +=
                         `
-    				<div class="col-lg-4 p-1 thongTinNguoiDung">
+                    <div class="col-lg-4 p-1 thongTinNguoiDung">
        
-					    <div class="card">
-					        <img class="card-img-top" style="width: 70px; height: 70px; border-radius: 50%;  margin-left: 40%;margin-top:10px" src="https://picsum.photos/200/300/?random" alt="Card image cap">
-					        <div class="card-block">
-					            <h4 class="card-title text-center pb-5 HoTen">${nguoiDung.HoTen}</h4>
-					            	<div class="card-body">
+                        <div class="card">
+                            <img class="card-img-top" style="width: 70px; height: 70px; border-radius: 50%;  margin-left: 40%;margin-top:10px" src="https://picsum.photos/200/300/?random" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title text-center pb-5 HoTen">${nguoiDung.HoTen}</h4>
+                                    <div class="card-body">
 
-					            	</div>
-									<p class="card-text ">
-										<span class="font-weight-bold">Tài Khoản: </span>
-										<span class="TaiKhoan">${nguoiDung.TaiKhoan}</span>
-									<p>
-									<p class="card-text ">
-										<span class="font-weight-bold">Mật Khẩu: </span>
-										<span class="MatKhau">${nguoiDung.MatKhau}</spann>
-									<p>
-									<p class="card-text">
-										<span class="font-weight-bold">Email: </span>
-										<span class="Email">${nguoiDung.Email}</span>
-									<p>
-									<p class="card-text">
-										<span class="font-weight-bold">Số ĐT: </span>
-										<span class="SoDT">${nguoiDung.SoDT}</span>
-									<p>
-									<p class="card-text ">
-										<span class="font-weight-bold">Loại Người Dùng: </span>
-										<span class="TenLoaiNguoiDung">${nguoiDung.TenLoaiNguoiDung}</span>
-									<p>
-					        </div>
-					        <div class="card-footer p-2 text-center">
-					            <button class="btn btn-primary btnSua" data-TaiKhoan="${nguoiDung.TaiKhoan}">Chỉnh Sửa</button>
-					            <button class="btn btn-danger btnXoa" data-TaiKhoan="${nguoiDung.TaiKhoan}">Xóa</button>
-					            <button class="btn btn-warning btnGhiDanh" data-TaiKhoan="${nguoiDung.TaiKhoan}">Ghi Danh</button>
-					        </div>
-					    </div>
-					</div>
+                                    </div>
+                                    <p class="card-text ">
+                                        <span class="font-weight-bold">Tài Khoản: </span>
+                                        <span class="TaiKhoan">${nguoiDung.TaiKhoan}</span>
+                                    <p>
+                                    <p class="card-text ">
+                                        <span class="font-weight-bold">Mật Khẩu: </span>
+                                        <span class="MatKhau">${nguoiDung.MatKhau}</spann>
+                                    <p>
+                                    <p class="card-text">
+                                        <span class="font-weight-bold">Email: </span>
+                                        <span class="Email">${nguoiDung.Email}</span>
+                                    <p>
+                                    <p class="card-text">
+                                        <span class="font-weight-bold">Số ĐT: </span>
+                                        <span class="SoDT">${nguoiDung.SoDT}</span>
+                                    <p>
+                                    <p class="card-text ">
+                                        <span class="font-weight-bold">Loại Người Dùng: </span>
+                                        <span class="TenLoaiNguoiDung">${nguoiDung.TenLoaiNguoiDung}</span>
+                                    <p>
+                            </div>
+                            <div class="card-footer p-2 text-center">
+                                <button class="btn btn-primary btnSua" data-TaiKhoan="${nguoiDung.TaiKhoan}">Chỉnh Sửa</button>
+                                <button class="btn btn-danger btnXoa" data-TaiKhoan="${nguoiDung.TaiKhoan}">Xóa</button>
+                                <button class="btn btn-warning btnGhiDanh" data-TaiKhoan="${nguoiDung.TaiKhoan}">Ghi Danh</button>
+                            </div>
+                        </div>
+                    </div>
 
 
-    		`
+            `
                 }
             }
         } else {
@@ -106,6 +75,7 @@ $(document).ready(function() {
 
         $("#DanhSachNguoiDung").html(noidung);
     }
+
     //Hàm xóa 
     $('body').delegate(".btnXoa", "click", function() {
         var taiKhoan = $(this).attr("data-TaiKhoan");
@@ -156,21 +126,6 @@ $(document).ready(function() {
             }
         })
     })
-
-    //Hàm Lấy dữ liệu từ local Storage
-    function LayStorage() {
-        //Lấy dữ liệu từ localstorage
-        var jsonDSND = localStorage.getItem("DanhSachNguoiDung");
-        danhSachNguoiDung.DSND = JSON.parse(jsonDSND);
-
-        // var ten = danhSachNguoiDung.DSND[0].HoTen;
-        // $(".HienThiHoTen").html(ten);
-        return danhSachNguoiDung.DSND;
-    }
-
-    // console.log(LayStorage()[0].HoTen);
-    var ten = LayStorage()[0].HoTen;
-    $(".HienThiHoTen").html(ten);
 
     //Hàm xử lý gọi modal thêm người dùng
 
@@ -420,8 +375,39 @@ $(document).ready(function() {
             .fail(function(err) {
                 console.log(err);
             })
-
-
     })
 
+
+    //Hàm lọc danh sách người dùng
+    function LocDanhSachNguoiDung(MLND) {
+
+    }
+
+
+    // LocDanhSachNguoiDung('HV');
+    //Xử lý Sự kiện onchange Lọc người dùng
+    
+    $('#locNguoiDung').change(function() {
+        var MLND = $(this).val();
+        var danhSachKQ = [];
+        nguoiDungService.LayThongTinNguoiDung()
+            .done(function(result) {
+                danhSachNguoiDung.DSND = result;
+                for (var i = 0; i < danhSachNguoiDung.DSND.length; i++) {
+                    var nguoiDung = danhSachNguoiDung.DSND[i];
+                    if (nguoiDung.MaLoaiNguoiDung === MLND) {
+                        danhSachKQ.push(nguoiDung);
+                    }
+                }
+                if (MLND === "HV" || MLND === "GV") {
+                    CardNguoiDung(danhSachKQ);
+
+                } else {
+                    LoadDanhSachNguoiDung();
+                }
+            })
+            .fail(function(err) {
+                console.log(err);
+            })
+    })
 });
