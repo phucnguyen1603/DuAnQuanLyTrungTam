@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ - Quản Lý Trung Tâm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/animation.css">
     <link rel="stylesheet" href="../../assets/css/index.css">
@@ -21,12 +22,15 @@
         <div class="row content">
             <div class="col-lg-8 content__left">
                 <h1 class="content__left__ttl">CyberSoft</h1>
-                <p class="content__left__slogan">Trở Thành Chuyên Gia <span>"LẬP TRÌNH WEB"</span> từ con số 0</p>
+                <p class="content__left__slogan">Trở Thành Chuyên Gia
+                    <span>"LẬP TRÌNH WEB"</span> từ con số 0</p>
             </div>
             <div class="col-lg-4 content__right">
                 <div class="content__right__contact">
-                    <span class="email"><i class="fa fa-envelope"></i>admin@cybersoft.edu.vn</span>
-                    <span class="phone"><i class="fa fa-phone"></i>012342342</span>
+                    <span class="email">
+                        <i class="fa fa-envelope"></i>admin@cybersoft.edu.vn</span>
+                    <span class="phone">
+                        <i class="fa fa-phone"></i>012342342</span>
                 </div>
                 <div class="content__right__btn">
                     <div class="content__right__DangNhap">
@@ -39,28 +43,28 @@
             </div>
             <div class="col-lg-12 icon-courses d-flex justify-content-center">
                 <div class="row icon-courses__list">
-                    <div class=" icon-courses__item">
+                    <div class="mb-4 icon-courses__item ">
                         <img src="../../assets/images/img-trangchu/icon courses/html5.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/css3.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/js.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/bootstrap.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/jquery.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/ajax.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/Angular.png" alt="">
                     </div>
-                    <div class="icon-courses__item">
+                    <div class="mb-4 icon-courses__item">
                         <img src="../../assets/images/img-trangchu/icon courses/WordPress_blue_logo.svg.png" alt="">
                     </div>
                 </div>
@@ -72,8 +76,8 @@
         <div class="wrap-login100">
             <form class="login100-form">
                 <span class="login100-form-title ">
-                        Đăng Nhập
-                    </span>
+                    Đăng Nhập
+                </span>
                 <div class="wrap-input100 ">
                     <input class="input100" type="text" id="TaiKhoan">
                     <span class="focus-input100" data-placeholder="Tài Khoản"></span>
@@ -94,11 +98,11 @@
                 </div>
                 <div class="text-center ">
                     <span class="txt1">
-                            Bạn chưa có tài khoản?
-                        </span>
+                        Bạn chưa có tài khoản?
+                    </span>
                     <a class="txt2 txtDangKy" href="#">
-                            Đăng kí
-                        </a>
+                        Đăng kí
+                    </a>
                 </div>
             </form>
         </div>
@@ -107,8 +111,8 @@
         <div class="wrap-signUp100">
             <form class="signUp100-form">
                 <span class="login100-form-title ">
-                        Đăng Ký
-                    </span>
+                    Đăng Ký
+                </span>
                 <div class="wrap-input100 ">
                     <input class="input100" type="text" id="TKDangKy">
                     <span class="focus-input100" data-placeholder="Tài Khoản"></span>
@@ -144,24 +148,26 @@
                 </div>
                 <div class="text-center ">
                     <span class="txt1">
-                            Bạn đã có tài khoản?
-                        </span>
+                        Bạn đã có tài khoản?
+                    </span>
                     <a class="txt2 txtDangNhap" href="#">
-                            Đăng Nhập
-                        </a>
+                        Đăng Nhập
+                    </a>
                 </div>
             </form>
         </div>
         <!-- end form đăng kí -->
     </div>
     <!-- =============================================================================================== -->
+    <!-- sweetalert2 -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.0/sweetalert2.all.js"></script>
-    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../node_modules/popper.js/dist/popper.min.js"></script>
     <script type="text/javascript" src="../../node_modules/bootstrap//dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../services/NguoiDungService.js"></script>
     <script type="text/javascript" src="../Models/NguoiDung.js"></script>
     <script type="text/javascript" src="../Models/DanhSachNguoiDung.js"></script>
+    <script type="text/javascript" src="../Controlers/main.js"></script>
     <script type="text/javascript" src="../Controlers/index.js"></script>
 </body>
 

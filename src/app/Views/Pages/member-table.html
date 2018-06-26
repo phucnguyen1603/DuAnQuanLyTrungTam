@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon.png">
-    <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <title>Quản Lý Người Dùng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap Core CSS -->
     <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -106,13 +106,13 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="admin.html" aria-expanded="false"><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><span class="hide-menu">Thông Tin Tài Khoản</span></a>
-                        </li>
                         <li> <a class="waves-effect waves-dark" href="member-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Người Dùng</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="course-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Khóa Học</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="courses-card.html" aria-expanded="false"><span class="hide-menu">Card Course</span></a>
+                        <li> <a class="waves-effect waves-dark" href="../nguoiDung.html" aria-expanded="false"><span class="hide-menu">Khóa Học Của Tôi</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="../thongTinTaiKhoan.html" aria-expanded="false"><span class="hide-menu">Thông Tin Tài Khoản</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -172,6 +172,7 @@
                 <!-- ============================================================== -->
                 <!-- Danh Sách Người Dùng -->
                 <div class="row" id="DanhSachNguoiDung">
+                    
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -248,7 +249,7 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../../../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../../assets/plugins/bootstrap/js/tether.min.js"></script>
     <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -267,10 +268,11 @@
     <script type="text/javascript" src="../../services/NguoiDungService.js"></script>
     <script type="text/javascript" src="../../services/KhoaHocService.js"></script>
     <script type="text/javascript" src="../../Models/NguoiDung.js"></script>
+    <script type="text/javascript" src="../../Models/KhoaHoc.js"></script>
     <script type="text/javascript" src="../../Models/DanhSachNguoiDung.js"></script>
     <script type="text/javascript" src="../../Models/DanhSachKhoaHoc.js"></script>
-    <script type="text/javascript" src="../../Controlers/member.js"></script>
     <script type="text/javascript" src="../../Controlers/main.js"></script>
+    <script type="text/javascript" src="../../Controlers/member.js"></script>
 </body>
 
 </html>

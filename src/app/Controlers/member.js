@@ -25,47 +25,55 @@ $(document).ready(function() {
                 var nguoiDung = DSND[i];
                 if (nguoiDung.HoTen !== "null" && nguoiDung.TaiKhoan !== "null" && nguoiDung.Email !== "null" && nguoiDung.SoDT !== "null" && nguoiDung.MatKhau !== "null" && !isNaN(nguoiDung.SoDT) && nguoiDung.TenLoaiNguoiDung !== "null") {
                     noidung +=
-                        `
-                    <div class="col-lg-4 p-1 thongTinNguoiDung">
-       
-                        <div class="card">
-                            <img class="card-img-top" style="width: 70px; height: 70px; border-radius: 50%;  margin-left: 40%;margin-top:10px" src="https://picsum.photos/200/300/?random" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title text-center pb-5 HoTen">${nguoiDung.HoTen}</h4>
-                                    <div class="card-body">
+                                    `
+                                <div class="col-lg-4 p-1 thongTinNguoiDung">
 
+                                    <div class="card">
+                                        <img class="card-img-top" style="width: 70px; height: 70px; border-radius: 50%;  margin-left: 40%;margin-top:10px" src="https://picsum.photos/200/300/?random" alt="Card image cap">
+                                        <div class="card-block">
+                                            <h4 class="card-title text-center pb-5 HoTen">${nguoiDung.HoTen}</h4>
+                                                <div class="card-body">
+
+                                                </div>
+                                                <p class="card-text ">
+                                                    <span class="font-weight-bold">Tài Khoản: </span>
+                                                    <span class="TaiKhoan">${nguoiDung.TaiKhoan}</span>
+                                                <p>
+                                                <p class="card-text ">
+                                                    <span class="font-weight-bold">Mật Khẩu: </span>
+                                                    <span class="MatKhau">${nguoiDung.MatKhau}</spann>
+                                                <p>
+                                                <p class="card-text">
+                                                    <span class="font-weight-bold">Email: </span>
+                                                    <span class="Email">${nguoiDung.Email}</span>
+                                                <p>
+                                                <p class="card-text">
+                                                    <span class="font-weight-bold">Số ĐT: </span>
+                                                    <span class="SoDT">${nguoiDung.SoDT}</span>
+                                                <p>
+                                                <p class="card-text ">
+                                                    <span class="font-weight-bold">Loại Người Dùng: </span>
+                                                    <span class="TenLoaiNguoiDung">${nguoiDung.TenLoaiNguoiDung}</span>
+                                                <p>
+                                        </div>
+                                        <div class="card-footer p-2 text-center">
+                                            <button class="btn btn-primary btnSua" data-TaiKhoan="${nguoiDung.TaiKhoan}">Chỉnh Sửa</button>
+                                            <button class="btn btn-danger btnXoa" data-TaiKhoan="${nguoiDung.TaiKhoan}">Xóa</button>
+                                            <button class="btn btn-warning btnGhiDanh" data-TaiKhoan="${nguoiDung.TaiKhoan}">Ghi Danh</button>
+                                        </div>
                                     </div>
-                                    <p class="card-text ">
-                                        <span class="font-weight-bold">Tài Khoản: </span>
-                                        <span class="TaiKhoan">${nguoiDung.TaiKhoan}</span>
-                                    <p>
-                                    <p class="card-text ">
-                                        <span class="font-weight-bold">Mật Khẩu: </span>
-                                        <span class="MatKhau">${nguoiDung.MatKhau}</spann>
-                                    <p>
-                                    <p class="card-text">
-                                        <span class="font-weight-bold">Email: </span>
-                                        <span class="Email">${nguoiDung.Email}</span>
-                                    <p>
-                                    <p class="card-text">
-                                        <span class="font-weight-bold">Số ĐT: </span>
-                                        <span class="SoDT">${nguoiDung.SoDT}</span>
-                                    <p>
-                                    <p class="card-text ">
-                                        <span class="font-weight-bold">Loại Người Dùng: </span>
-                                        <span class="TenLoaiNguoiDung">${nguoiDung.TenLoaiNguoiDung}</span>
-                                    <p>
-                            </div>
-                            <div class="card-footer p-2 text-center">
-                                <button class="btn btn-primary btnSua" data-TaiKhoan="${nguoiDung.TaiKhoan}">Chỉnh Sửa</button>
-                                <button class="btn btn-danger btnXoa" data-TaiKhoan="${nguoiDung.TaiKhoan}">Xóa</button>
-                                <button class="btn btn-warning btnGhiDanh" data-TaiKhoan="${nguoiDung.TaiKhoan}">Ghi Danh</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-            `
+                                </div>
+                        `
+                //         `
+                //     <tr>
+                //         <td>${nguoiDung.TaiKhoan}</td>
+                //         <td>${nguoiDung.MatKhau}</td>
+                //         <td>${nguoiDung.HoTen}</td>
+                //         <td>${nguoiDung.Email}</td>
+                //         <td>${nguoiDung.SoDT}</td>
+                //         <td>${nguoiDung.TenLoaiNguoiDung}</td>
+                //     </tr>
+                // `
                 }
             }
         } else {
@@ -74,6 +82,7 @@ $(document).ready(function() {
 
 
         $("#DanhSachNguoiDung").html(noidung);
+        // $('.tblNguoiDung').html(noidung);
     }
 
     //Hàm xóa 
@@ -95,7 +104,7 @@ $(document).ready(function() {
                         //kiểm tra tài khoản có tồn tại các khóa học chưa?
                         //nếu tồn tại thì không thể xóa tài khoản
                         //Nếu k có khóa học nào được ghi danh thì sẽ xóa được.
-                        if (result !== "") {
+                        if (result !== "Did not find the course") {
                             swal({
                                 position: 'center',
                                 type: 'warning',
@@ -112,7 +121,7 @@ $(document).ready(function() {
                                     })
                                     setTimeout(function() {
                                         window.location.reload();
-                                    }, 3000);
+                                    }, 2000);
 
                                 })
                                 .fail(function(err) {
@@ -275,19 +284,17 @@ $(document).ready(function() {
     //Xử Lý sự kiện tìm kiếm
     $("#txtTuKhoa").keyup(function() {
 
-        var tuKhoa = $("#txtTuKhoa").val();
-        //var tuKhoa = $(this).val();
+        var tuKhoa = $(this).val();
         //Gọi phương thức tìm kiếm người dùng => trả là 1 danh sách người dùng chứa từ khóa
         var danhSachNguoiKQ = danhSachNguoiDung.TimKiemNguoiDung(tuKhoa);
         CardNguoiDung(danhSachNguoiKQ.DSND);
 
-        // HighLight(tuKhoa);
     })
 
     //Xu ly click nut Ghi Danh
     $('body').delegate(".btnGhiDanh", 'click', function() {
         var taiKhoan = $(this).attr("data-TaiKhoan");
-        var modalTitle = `<h1>Ghi Danh Khoa Hoc</h1>`;
+        var modalTitle = `<h1>Ghi Danh Khóa Học</h1>`;
         var modalBody = `
             <div class="form-group">
                <label>Danh sách Khóa Học</label>
@@ -342,7 +349,6 @@ $(document).ready(function() {
                         break;
                     }
                 }
-                console.log(flag);
                 //Kiểm tra nếu flag = 0, khóa học đã tồn tại,
                 // Nếu flag != 0, thực hiện ghi danh khóa học
                 if (flag === 0) {
@@ -378,15 +384,9 @@ $(document).ready(function() {
     })
 
 
-    //Hàm lọc danh sách người dùng
-    function LocDanhSachNguoiDung(MLND) {
 
-    }
-
-
-    // LocDanhSachNguoiDung('HV');
     //Xử lý Sự kiện onchange Lọc người dùng
-    
+
     $('#locNguoiDung').change(function() {
         var MLND = $(this).val();
         var danhSachKQ = [];

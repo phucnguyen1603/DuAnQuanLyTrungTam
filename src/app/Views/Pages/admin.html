@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon.png">
-    <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <title>DASHBOARD</title>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +92,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-10" />Markarn Doe</a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-10" />Chào, <span class="HienThiHoTen"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -112,24 +112,24 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="admin.html" aria-expanded="false"><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><span class="hide-menu">Thông Tin Tài Khoản</span></a>
-                        </li>
                         <li> <a class="waves-effect waves-dark" href="member-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Người Dùng </span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="course-table.html" aria-expanded="false"><span class="hide-menu">Quản Lý Khóa Học</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="courses-card.html" aria-expanded="false"><span class="hide-menu">noooooo</span></a>
+                        <li> <a class="waves-effect waves-dark" href="../nguoiDung.html" aria-expanded="false"><span class="hide-menu">Khóa Học Của Tôi</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="../thongTinTaiKhoan.html" aria-expanded="false"><span class="hide-menu">Thông Tin Tài Khoản</span></a>
                         </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
-             <!-- Bottom points-->
+            <!-- Bottom points-->
             <div class="sidebar-footer">
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="fa fa-envelope-o"></i></a>
-                <!-- item--><a href="../../Views/index.html" id="logout" class="link" data-toggle="tooltip" title="Logout"><i class="fa fa-power-off"></i></a> 
+                <!-- item--><a href="../../Views/index.html" id="logout" class="link" data-toggle="tooltip" title="Logout"><i class="fa fa-power-off"></i></a>
             </div>
             <!-- End Bottom points-->
         </aside>
@@ -155,7 +155,6 @@
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                     </div>
-                    
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
@@ -174,13 +173,16 @@
                                         <div class="d-flex flex-wrap">
                                             <div>
                                                 <h3 class="card-title">Sales Overview</h3>
-                                                <h6 class="card-subtitle">Ample Admin Vs Pixel Admin</h6> </div>
+                                                <h6 class="card-subtitle">Ample Admin Vs Pixel Admin</h6>
+                                            </div>
                                             <div class="ml-auto">
                                                 <ul class="list-inline">
                                                     <li>
-                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6> </li>
+                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6>
+                                                    </li>
                                                     <li>
-                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6> </li>
+                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -205,11 +207,14 @@
                             <div class="card-block text-center ">
                                 <ul class="list-inline m-b-0">
                                     <li>
-                                        <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10 "></i>Mobile</h6> </li>
+                                        <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10 "></i>Mobile</h6>
+                                    </li>
                                     <li>
-                                        <h6 class="text-muted  text-primary"><i class="fa fa-circle font-10 m-r-10"></i>Desktop</h6> </li>
+                                        <h6 class="text-muted  text-primary"><i class="fa fa-circle font-10 m-r-10"></i>Desktop</h6>
+                                    </li>
                                     <li>
-                                        <h6 class="text-muted  text-success"><i class="fa fa-circle font-10 m-r-10"></i>Tablet</h6> </li>
+                                        <h6 class="text-muted  text-success"><i class="fa fa-circle font-10 m-r-10"></i>Tablet</h6>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -470,7 +475,7 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../../../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../../assets/plugins/bootstrap/js/tether.min.js"></script>
     <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -495,7 +500,10 @@
     <script src="../../../assets/plugins/c3-master/c3.min.js"></script>
     <!-- Chart JS -->
     <script src="../../../assets/js/dashboard1.js"></script>
-
+    <script type="text/javascript" src="../../Models/DanhSachNguoiDung.js"></script>
+    <script type="text/javascript" src="../../Models/DanhSachKhoaHoc.js"></script>
+    <script type="text/javascript" src="../../services/KhoaHocService.js"></script>
+    <script type="text/javascript" src="../../services/NguoiDungService.js"></script>
     <script type="text/javascript" src="../../Controlers/main.js"></script>
 </body>
 

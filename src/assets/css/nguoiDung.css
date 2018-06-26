@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('../images/bg-body.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.chuyenDong {}
+.card-hover {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.card-hover img.layer-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-hover .bg-gray,
+.card-hover .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.36);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.card-hover .bg-gradient {
+    background-image: -webkit-linear-gradient(45deg, #00bcff 0%, #806f00 40%, #000000fa 100%);
+    z-index: 2;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card-hover .vien {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+    border: 1px solid white;
+    transition: 0.3s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.card-hover .tenKhoaHoc {
+    font-size: 20px;
+    font-family: segoe ui light;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    z-index: 4;
+    color: white;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.card-hover .chiTiet {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 4;
+    transform: scale(0) translateY(20px);
+    transition: 0.3s;
+}
+
+.card-hover .chiTiet button {
+    font-size: 15px;
+    width: 100px;
+}
+
+.KhoaHoc:hover .tenKhoaHoc {
+    transform: translateY(15px);
+}
+
+.KhoaHoc:hover .thongtin,
+.KhoaHoc:hover .vien {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.KhoaHoc:hover .bg-gray {
+    opacity: 0;
+}
+
+.KhoaHoc:hover .bg-gradient {
+    opacity: 0.5;
+}
+
+.KhoaHoc:hover .chiTiet {
+    transform: scale(1) translateY(-10px);
+}
+
+.KhoaHoc {
+    transition: 0.3s;
+}
+
+.KhoaHoc:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 20px black;
+}
+
+.admin {
+    display: none;
+}
+
+.admin-block {
+    display: block;
+}
+
+.active {
+    color: red;
+}

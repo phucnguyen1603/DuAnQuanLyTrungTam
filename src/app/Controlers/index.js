@@ -23,10 +23,10 @@ $('.bg-form').click(function() {
 })
 
 $('.txtDangKy').click(function() {
-    $('.wrap-login100').removeClass('wrap-login100--display');
-    $('.wrap-signUp100').addClass('wrap-signUp100--display');
-})
-//Hiển thị form đăng kí
+        $('.wrap-login100').removeClass('wrap-login100--display');
+        $('.wrap-signUp100').addClass('wrap-signUp100--display');
+    })
+    //Hiển thị form đăng kí
 
 $('.btn-DangKy').click(function() {
     $('.bg-form').addClass('bg-form--display');
@@ -82,7 +82,7 @@ function XuLyDangNhap() {
                         if (maLoaiNguoiDung === "GV") {
                             window.location.assign("../Views/Pages/admin.html");
                         } else {
-                            window.location.assign("Course.html");
+                            window.location.assign("nguoiDung.html");
                         }
                     })
                     .fail(function(err) {
@@ -125,22 +125,16 @@ function DangKiNguoiDung() {
                 type: 'success',
                 title: 'Đăng Kí Thành Công',
                 showConfirmButton: false,
-                timer: 2000,
             })
         })
         .fail(function(err) {
             console.log(err);
         })
-        setTimeout(function(){
-            window.location.reload();
-        },2000)
+    setTimeout(function() {
+        window.location.reload();
+    }, 2000)
 }
 
-function LuuStorage(DSND) {
-    //Lưu mảng người dùng
-    var jsonDSND = JSON.stringify(DSND);
-    localStorage.setItem("DanhSachNguoiDung", jsonDSND);
-}
 $('#btn-DangNhap').click(function() {
     XuLyDangNhap();
 });
