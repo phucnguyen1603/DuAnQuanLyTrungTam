@@ -31,7 +31,7 @@ function HienThiHoTen() {
             for (var i = 0; i < result.length; i++) {
                 var nguoiDung = result[i];
                 if (taiKhoan === nguoiDung.TaiKhoan) {
-                	danhSachNguoiDung.DSND = nguoiDung
+                    danhSachNguoiDung.DSND = nguoiDung
                     break;
                 }
             }
@@ -42,7 +42,23 @@ function HienThiHoTen() {
         })
 }
 HienThiHoTen();
+// =====================================================
+// Thực hiện kiểm tra nhâp 
 
+//Kiểm Tra không được để trống
+function KiemTraNhap() {
+
+}
+$('#btn-DangNhap').click(function() {
+    var taiKhoan = $('#TaiKhoan').val();
+    var thongBaoTK = $('.thongbaoTk');
+    if (taiKhoan === "") {
+      thongBaoTK.html("Sai roi");
+        thongBaoTK.css({
+            color: 'red',
+        });    
+    }
+});
 // Xử lý kiểm tra loại người dùng
 
 
@@ -54,10 +70,4 @@ if (MLND === "GV") {
     $('.admin').addClass('admin-block');
 } else if (MLND === "HV") {
     $('.admin').removeClass('admin-block');
-}
-
-
-//Validate
-function KiemTraNhap() {
-    
 }

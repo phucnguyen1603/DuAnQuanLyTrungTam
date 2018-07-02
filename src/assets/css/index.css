@@ -18,6 +18,7 @@ body {
 }
 
 
+
 /* css for images */
 
 .bg-img {
@@ -33,6 +34,7 @@ body {
 }
 
 
+
 /* css for content */
 
 .content {
@@ -44,6 +46,7 @@ body {
     height: 100%;
     margin: 0;
 }
+
 
 
 /* css for content__left */
@@ -89,6 +92,7 @@ body {
     color: blue;
     text-shadow: 10px 10px 50px gray;
 }
+
 
 
 /* css for content__right */
@@ -168,6 +172,7 @@ body {
 }
 
 
+
 /* css button loading */
 
 .img-loading {
@@ -181,6 +186,7 @@ body {
 .img-loading--display {
     visibility: visible;
 }
+
 
 
 /* css for bg-gradient */
@@ -210,6 +216,7 @@ body {
     -o-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
     background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
 }
+
 
 
 /* css for course */
@@ -275,6 +282,7 @@ body {
 }
 
 
+
 /* Css for preloading */
 
 .preloading {
@@ -296,6 +304,7 @@ body {
     left: 35%;
     z-index: 7;
 }
+
 
 
 /* css for form */
@@ -327,6 +336,7 @@ a:hover {
     color: -moz-linear-gradient(left, #21d4fd, #b721ff);
     color: linear-gradient(left, #21d4fd, #b721ff);
 }
+
 
 
 /*---------------------------------------------*/
@@ -406,6 +416,7 @@ textarea:-ms-input-placeholder {
 }
 
 
+
 /*---------------------------------------------*/
 
 button {
@@ -421,6 +432,7 @@ button:hover {
 iframe {
     border: none !important;
 }
+
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -439,6 +451,7 @@ iframe {
     color: #333333;
     line-height: 1.5;
 }
+
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -461,6 +474,7 @@ iframe {
     position: absolute;
     z-index: 5;
 }
+
 
 
 /*------------------------------------------------------------------
@@ -486,6 +500,7 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Input ]*/
 
@@ -507,6 +522,7 @@ iframe {
     background: transparent;
     padding: 0 5px;
 }
+
 
 
 /*---------------------------------------------*/
@@ -573,6 +589,7 @@ iframe {
 .has-val.input100+.focus-input100::before {
     width: 100%;
 }
+
 
 
 /*---------------------------------------------*/
@@ -645,6 +662,7 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
@@ -664,6 +682,7 @@ iframe {
 }
 
 
+
 /* css for images */
 
 .bg-img {
@@ -679,6 +698,7 @@ iframe {
 }
 
 
+
 /* css for content */
 
 .content {
@@ -690,6 +710,7 @@ iframe {
     height: 100%;
     margin: 0;
 }
+
 
 
 /* css for content__left */
@@ -737,6 +758,7 @@ iframe {
     color: blue;
     text-shadow: 10px 10px 50px gray;
 }
+
 
 
 /* css for content__right */
@@ -802,6 +824,7 @@ iframe {
 }
 
 
+
 /* css for bg-gradient */
 
 .bg-gradient {
@@ -829,6 +852,7 @@ iframe {
     -o-background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
     background-image: linear-gradient(90deg, #8cdf8c7a 0%, #ffff0066 45%, #c27d7d94 100%);
 }
+
 
 
 /* css for course */
@@ -890,6 +914,7 @@ iframe {
 }
 
 
+
 /* Css for preloading */
 
 .preloading {
@@ -913,6 +938,7 @@ iframe {
 }
 
 
+
 /* css for bg-form */
 
 .bg-form {
@@ -934,6 +960,7 @@ iframe {
     opacity: 1;
     transform: scale(1);
 }
+
 
 
 /* end css for bg-form */
@@ -968,6 +995,7 @@ a:hover {
     color: -moz-linear-gradient(left, #21d4fd, #b721ff);
     color: linear-gradient(left, #21d4fd, #b721ff);
 }
+
 
 
 /*---------------------------------------------*/
@@ -1047,6 +1075,7 @@ textarea:-ms-input-placeholder {
 }
 
 
+
 /*---------------------------------------------*/
 
 button {
@@ -1062,6 +1091,7 @@ button:hover {
 iframe {
     border: none !important;
 }
+
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -1080,6 +1110,7 @@ iframe {
     color: #333333;
     line-height: 1.5;
 }
+
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -1114,6 +1145,7 @@ iframe {
 }
 
 
+
 /* [signUp] */
 
 .wrap-signUp100 {
@@ -1145,6 +1177,7 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Form ]*/
 
@@ -1168,6 +1201,7 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Input ]*/
 
@@ -1189,6 +1223,7 @@ iframe {
     background: transparent;
     padding: 0 5px;
 }
+
 
 
 /*---------------------------------------------*/
@@ -1255,6 +1290,7 @@ iframe {
 .has-val.input100+.focus-input100::before {
     width: 100%;
 }
+
 
 
 /*---------------------------------------------*/
@@ -1333,8 +1369,272 @@ iframe {
 }
 
 
+
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
 
 /* end css for form */
+
+
+/* ======================================================= */
+
+
+/* ===============Responsive========================== */
+
+@media screen and (max-width: 576px) {
+    .content__left h1 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    .content__left p {
+        padding-left: 1%;
+        font-size: 25px;
+    }
+    .content__left {
+        padding-left: 5%;
+        padding-top: 70px;
+        z-index: 5;
+    }
+    .content__left,
+    .content__right {
+        position: absolute;
+    }
+    .content__right__contact {
+        padding-bottom: 180px;
+    }
+    .content__right__btn {
+        text-align: center;
+    }
+    button.btn.btn-DangNhap,
+    button.btn.btn-DangKy {
+        width: 120px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .icon-courses__item img {
+        width: 50px;
+        height: 50px;
+    }
+    .icon-courses {
+        top: 60%;
+    }
+    .wrap-login100,
+    .wrap-signUp100 {
+        width: 300px;
+        margin-left: -150px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 25px;
+        top: 7%;
+    }
+    .login100-form-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .login100-form-btn,
+    .signUp100-form-btn {
+        font-size: 15px;
+    }
+    .wrap-input100 {
+        margin-bottom: 20px;
+    }
+    .wrap-login100 {
+        top: 20%;
+    }
+    .icon-courses__item {
+        padding: 10px 50px;
+    }
+    .preloading img {
+        width: 60%;
+        left: 22%;
+    }
+}
+
+@media screen and (max-width: 768px and min-width: 577px) {
+    .preloading img {
+        width: 50%;
+        left: 25%;
+    }
+    .content__left h1 {
+        font-size: 81px;
+        letter-spacing: 10px;
+    }
+    .content__left p {
+        padding-left: 1%;
+        padding-right: 5%;
+        font-size: 35px;
+    }
+    .content__left {
+        padding-left: 10%;
+        padding-top: 80px;
+        z-index: 5;
+    }
+    .content__left,
+    .content__right {
+        position: absolute;
+    }
+    .content__right__contact {
+        padding-bottom: 240px;
+        font-size: 25px;
+    }
+    .content__right__btn {
+        text-align: center;
+    }
+    button.btn.btn-DangNhap,
+    button.btn.btn-DangKy {
+        width: 220px;
+        height: 80px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .icon-courses__list {
+        margin-left: -25px !important;
+    }
+    .icon-courses__item img {
+        width: 90px;
+        height: 90px;
+    }
+    .icon-courses {
+        top: 70%;
+    }
+    .wrap-login100,
+    .wrap-signUp100 {
+        width: 500px;
+        margin-left: -250px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        top: 7%;
+    }
+    .login100-form-title {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .login100-form-btn,
+    .signUp100-form-btn {
+        font-size: 25px;
+    }
+    .wrap-input100 {
+        margin-bottom: 30px;
+    }
+    .wrap-login100 {
+        top: 20%;
+    }
+    .icon-courses__item {
+        padding: 10px 50px;
+    }
+    .txt1,
+    .txt2 {
+        font-size: 25px;
+    }
+    .input100 {
+        font-size: 25px;
+    }
+    .focus-input100::after {
+        font-size: 20px;
+        top: 10px;
+    }
+     .input100:focus+.focus-input100::after {
+        top: -25px;
+    }
+    .has-val.input100+.focus-input100::after {
+        top: -25px;
+    }
+}
+
+@media screen and (max-width: 1024px and min-width: 769px) {
+    .preloading img {
+        width: 50%;
+        left: 25%;
+    }
+    .content__left h1 {
+        font-size: 90px;
+        padding-top: 40px;
+        letter-spacing: 15px;
+    }
+    .content__left p {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 50px;
+    }
+    .content__left {
+        padding-left: 10%;
+        padding-top: 80px;
+        z-index: 5;
+    }
+    .content__left,
+    .content__right {
+        position: absolute;
+    }
+    .content__right__contact {
+        padding-bottom: 350px;
+        font-size: 35px;
+    }
+    .content__right__btn {
+        text-align: center;
+    }
+    button.btn.btn-DangNhap,
+    button.btn.btn-DangKy {
+        width: 250px;
+        height: 90px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .icon-courses__list {
+        margin-left: -25px !important;
+    }
+    .icon-courses__item img {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-courses {
+        top: 70%;
+    }
+    .wrap-login100,
+    .wrap-signUp100 {
+        width: 700px;
+        margin-left: -350px;
+        padding-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+        top: 7%;
+    }
+    .login100-form-title {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .login100-form-btn,
+    .signUp100-form-btn {
+        font-size: 35px;
+    }
+    .wrap-input100 {
+        margin-bottom: 50px;
+    }
+    .input100 {
+        font-size: 25px;
+    }
+    .wrap-login100 {
+        top: 20%;
+    }
+    .icon-courses__item {
+        padding: 10px 50px;
+    }
+    .txt1,
+    .txt2 {
+        font-size: 30px;
+    }
+    .focus-input100::after {
+        font-size: 25px;
+        top: 10px;
+    }
+    .input100:focus+.focus-input100::after {
+        top: -35px;
+    }
+    .has-val.input100+.focus-input100::after {
+        top: -35px;
+    }
+}

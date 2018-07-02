@@ -15,7 +15,7 @@ $(function() {
                                 <img class = "card-img-top layer-img" src = "${khoaHoc.HinhAnh}" alt = "Card image cap" >
                                 <h3 class = "card-title tenKhoaHoc font-weight-bold" >${khoaHoc.TenKhoaHoc}</h3>
                                 <div class = "chiTiet">
-                                    <button class = "btn btn-warning chiTietKhoaHoc" data-taiKhoan=${khoaHoc.MaKhoaHoc}> Chi tiết </button>
+                                    <button class = "btn btn-warning chiTietKhoaHoc" data-taiKhoan='${khoaHoc.MaKhoaHoc}'> Chi tiết </button>
                                 </div> 
                                 <div class = "bg-gray"></div> 
                                 <div class = "bg-gradient"></div> 
