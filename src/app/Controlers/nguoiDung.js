@@ -86,8 +86,8 @@ $(function() {
         window.location.assign(`../Views/chiTietKhoaHoc.html?${maKhoaHoc}`);
     })
 
-    // TweenMax.staggerFrom($('.chuyenDong'), 1, {
-    //     top: 150,
-    //     opacity: 0
-    // },0.3);
+    TweenMax.staggerFrom($('.chuyenDong'), 1, {
+        top: 150,
+        opacity: 0
+    },0.3);
 })

@@ -240,8 +240,6 @@ $(document).ready(function() {
     $("#txtTuKhoa").keyup(function() {
 
         var tuKhoa = $(this).val();
-        console.log(tuKhoa);
-        //var tuKhoa = $(this).val();
         //Gọi phương thức tìm kiếm người dùng => trả là 1 danh sách người dùng chứa từ khóa
         var danhSachKhoaHocTK = danhSachKhoaHoc.TimKiemKhoaHoc(tuKhoa);
         CardKhoaHoc(danhSachKhoaHocTK.DSKH);

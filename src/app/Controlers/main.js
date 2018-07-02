@@ -42,23 +42,7 @@ function HienThiHoTen() {
         })
 }
 HienThiHoTen();
-// =====================================================
-// Thực hiện kiểm tra nhâp 
 
-//Kiểm Tra không được để trống
-function KiemTraNhap() {
-
-}
-$('#btn-DangNhap').click(function() {
-    var taiKhoan = $('#TaiKhoan').val();
-    var thongBaoTK = $('.thongbaoTk');
-    if (taiKhoan === "") {
-      thongBaoTK.html("Sai roi");
-        thongBaoTK.css({
-            color: 'red',
-        });    
-    }
-});
 // Xử lý kiểm tra loại người dùng
 
 

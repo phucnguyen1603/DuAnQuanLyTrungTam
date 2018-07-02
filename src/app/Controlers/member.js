@@ -281,15 +281,7 @@ $(document).ready(function() {
                 console.log(err);
             })
     })
-    //Xử Lý sự kiện tìm kiếm
-    $("#txtTuKhoa").keyup(function() {
-
-        var tuKhoa = $(this).val();
-        //Gọi phương thức tìm kiếm người dùng => trả là 1 danh sách người dùng chứa từ khóa
-        var danhSachNguoiKQ = danhSachNguoiDung.TimKiemNguoiDung(tuKhoa);
-        CardNguoiDung(danhSachNguoiKQ.DSND);
-
-    })
+    
 
     //Xu ly click nut Ghi Danh
     $('body').delegate(".btnGhiDanh", 'click', function() {
@@ -410,4 +402,14 @@ $(document).ready(function() {
                 console.log(err);
             })
     })
+
+    //Xử Lý sự kiện tìm kiếm
+    $("#txtTuKhoa").keyup(function() {
+
+        var tuKhoa = $(this).val();
+        //Gọi phương thức tìm kiếm người dùng => trả là 1 danh sách người dùng chứa từ khóa
+        var danhSachNguoiDungTK = danhSachNguoiDung.TimKiemNguoiDung(tuKhoa);
+        CardNguoiDung(danhSachNguoiDungTK.DSND);
+    })
+    
 });

@@ -1452,7 +1452,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 768px and min-width: 577px) {
+@media screen and (max-width: 768px) and (min-width: 577px) {
     .preloading img {
         width: 50%;
         left: 25%;
@@ -1545,7 +1545,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 1024px and min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     .preloading img {
         width: 50%;
         left: 25%;

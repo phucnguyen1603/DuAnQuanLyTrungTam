@@ -23,10 +23,10 @@ $('.bg-form').click(function() {
 })
 
 $('.txtDangKy').click(function() {
-        $('.wrap-login100').removeClass('wrap-login100--display');
-        $('.wrap-signUp100').addClass('wrap-signUp100--display');
-    })
-    //Hiển thị form đăng kí
+    $('.wrap-login100').removeClass('wrap-login100--display');
+    $('.wrap-signUp100').addClass('wrap-signUp100--display');
+})
+//Hiển thị form đăng kí
 
 $('.btn-DangKy').click(function() {
     $('.bg-form').addClass('bg-form--display');
